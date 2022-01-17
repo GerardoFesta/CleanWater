@@ -131,6 +131,7 @@ body {
   font-weight: 600;
   text-align: center;
   padding-top: 8px;
+  font-family: arial;
 }
 
 .informationText img{
@@ -218,7 +219,8 @@ height: 100px;
 .waterQualityBox #percentage {
   font-size: 38px;
   color: #3c37df;
-  margin-left: 20px;
+  font-family: Arial;
+  margin-left: 40px;
 }
 
 .waterQualityBox #percentageDescription {
@@ -273,6 +275,7 @@ height: 100px;
 .waterQualityBox .particle #value {
   font-size: 20px;
   color:black;
+  font-style: normal;
 }
 
 .waterQualityBox .particle #index {
