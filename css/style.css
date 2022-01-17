@@ -1,0 +1,283 @@
+
+body {
+ 
+  color: #0019ff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: #ebf5ff;
+  padding-top: 30px;
+  width: 498px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-bottom: 0px;
+  border-top: 0px;
+}
+
+.main .newLogo {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.main .newLogo img {
+  width: 400px;
+}
+
+.main .button {
+  background-color: #0019ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 65px;
+  margin: 0 auto;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.main .button p {
+  font-weight: 600;
+  font-size: 26px;
+  color: #fff;
+  margin-left: 10px;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+
+.main .button p:hover {
+  color: #1f78b4;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+}
+
+
+
+.main .button.next {
+  margin-top: 10px;
+}
+
+.main #TextSection {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main #TextSection #welcomeText {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.main #TextSection #projectText {
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.main .doporilevazione {
+ height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 498px;
+  height: 8vh;
+  background-color: #1f78b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+}
+
+.navbar img:hover {
+  cursor: pointer;
+}
+
+.informationText #rilevazione {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.informationText img{
+    width: 36px;
+    height: 36px;
+}
+.waterQualityBox .imageDimension {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: -30px;
+}
+
+.waterQualityBox .particlePhTemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.waterQualityBox .particlePhTemp #value{
+  font-size: 25px;
+  color:black;
+  font-weight: 500;
+}
+
+
+.imageDimension img {
+width: 100px;
+height: 100px;
+}
+
+
+.gauge img#gaugeSample {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.gauge .infoGauge #percentage {
+  color:#67e46e;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  margin: -20px auto auto auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.waterQualityBox {
+  width: 400px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.waterQualityBox .title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.waterQualityBox #position {
+  font-size: 18px;
+  color: #878787;
+  margin-top: -4px;
+}
+
+.waterQualityBox #percentage {
+  font-size: 38px;
+  color: #3c37df;
+  margin-left: 20px;
+}
+
+.waterQualityBox #percentageDescription {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.waterQualityBox #fullDescription {
+  display: block;
+  color: #878787;
+  font-size: 18px;
+  margin-top: -13px;
+}
+
+.waterQualityBox .innerBox {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.waterQualityBox .particleInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.waterQualityBox .particle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.waterQualityBox .sfondo{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.waterQualityBox .particle #value {
+  font-size: 20px;
+  color:black;
+}
+
+.waterQualityBox .particle #index {
+  margin-top: -7px;
+  font-size: 20px;
+  color:black;
+  font-weight: 550;
+}
