@@ -98,11 +98,11 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position:fixed;
   bottom: 0;
   width: 498px;
   height: 8vh;
-  background-color: #1f78b4;
+  background-color: #3195EB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,11 +115,9 @@ body {
 }
 
 .navbar img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  width: 50px;
-  height: 50px;
-  padding: 20px;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
 }
 
 .navbar img:hover {
@@ -132,12 +130,19 @@ body {
   text-align: center;
   padding-top: 8px;
   font-family: arial;
+  color: #3C37DF;
+}
+
+.informationText img:hover{
+  cursor: pointer;
 }
 
 .informationText img{
-    width: 36px;
-    height: 36px;
-}
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
 .waterQualityBox .imageDimension {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,15 +176,17 @@ body {
 
 
 .imageDimension img {
-width: 100px;
-height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 
 .gauge img#gaugeSample {
+  height: 70px;
   display: block;
-  width: 50%;
-  margin: 0 auto;
+  width: 390px;
+  margin-top: 20px !important;
+  margin: auto;
 }
 
 .gauge .infoGauge #percentage {
