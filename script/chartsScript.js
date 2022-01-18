@@ -1,0 +1,196 @@
+
+//placeholder per i Flag
+REGcasa=true;
+REGfiume=false;
+REGmare=false;
+
+//Mock dei dati di tutti gli utenti quando la visualizzazione è giornoxgiorno
+datiCasaGG=[12, 13, 34, 42, 11, 21, 11]
+datiFiumeGG=[31, 55, 66, 77, 88, 88, 99]
+datiMareGG=[12, 13, 34, 42, 11, 21, 100]
+//Mock dei dati di tutti gli utenti quando la visualizzazione è xmese
+datiCasaMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+datiFiumeMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+datiMareMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//Mock dei dati di tutti gli utenti quando la visualizzazione è x trimestre
+datiCasaTRM=[45,45,45,45]
+datiFiumeTRM=[9,9,9,9]
+datiMareTRM=[69,69,69,69]
+
+//Mock dati personali utente siFlag vis giornaliera
+datiPersCasaGGFLAG=[12, 13, 34, 42, 11, 21, 11]
+datiPersFiumeGGFLAG=[12, 13, 34, 42, 11, 21, 11]
+datiPersMareGGFLAG=[12, 13, 34, 42, 11, 21, 11]
+//Mock dati personali utente noFlag vis giornaliera
+datiPersCasaGG=[undefined, 13, 34, 42, 11, 21, 11]
+datiPersFiumeGG=[undefined, 13, 34, 42, 11, 21, 11]
+datiPersmareGG=[undefined, 13, 34, 42, 11, 21, 11]
+//Mock dei dati personali utente quando la visualizzazione è xmese
+datiPersCasaMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+datiPersFiumeMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+datiPersMareMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//Mock dei dati personali utente quando la visualizzazione è x trimestre
+datiPersCasaTRM=[12, 13, 34, 42]
+datiPersFiumeTRM=[12, 13, 34, 42]
+datiPersMareTRM=[12, 13, 34, 42]
+
+
+//istanzio array label 7 giorni precedenti
+oggi= new Date()
+days=[]
+for(i=0;i<7;i++){
+    data=new Date(oggi)
+    data.setDate(oggi.getDate()-i)
+    days[i]=data.getDate()+"/"+(data.getMonth()+1)
+}
+
+//istanzio array label 12 mesi all'indietro dal corrente
+current=new Date();
+mesi=[current.toLocaleString('default', { month: 'long' })]
+for(i=1;i<12;i++){
+    current.setMonth(current.getMonth()-1);
+    previousMonth = current.toLocaleString('default', { month: 'long' });
+    mesi[i]=previousMonth
+}
+
+//istanzio label per trimestri
+trimestri=[]
+for(i=0;i<4;i++){
+    trimestri[i]=`${mesi[i * 3].substring(0, 3)}/${mesi[(i * 3) + 1].substring(0, 3)}/${mesi[(i * 3) + 2].substring(0, 3)}`
+}
+
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: days,
+        datasets: [{
+            label: 'Qualità delle rilevazioni',
+            data: [12, 13, 34, 42, 11, 21, 11],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: 100
+            }
+        }
+    }
+});
+
+
+FlagGiorni=true
+FlagMesi=false
+FlagTrimestri=false
+FlagCasa=true
+FlagFiume=false
+FlagMare=false
+
+function cambiaMesi(){
+    if(FlagMare)
+        myChart.data.datasets[0].data=datiMareMM;
+    if(FlagFiume)
+        myChart.data.datasets[0].data=datiFiumeMM;
+    if(FlagCasa)
+        myChart.data.datasets[0].data=datiCasaMM;
+    
+    myChart.data.labels=mesi
+    myChart.update();
+    FlagGiorni=false
+    FlagMesi=true
+    FlagTrimestri=false
+}
+function cambiaGiorni(){
+    if(FlagMare)
+        myChart.data.datasets[0].data=datiMareGG;
+    if(FlagFiume)
+        myChart.data.datasets[0].data=datiFiumeGG;
+    if(FlagCasa)
+        myChart.data.datasets[0].data=datiCasaGG;
+
+    myChart.data.labels=days
+    myChart.update();
+    FlagGiorni=true
+    FlagMesi=false
+    FlagTrimestri=false
+}
+function cambiaTrimestri(){
+    if(FlagMare)
+        myChart.data.datasets[0].data=datiMareTRM;
+    if(FlagFiume)
+        myChart.data.datasets[0].data=datiFiumeTRM;
+    if(FlagCasa)
+        myChart.data.datasets[0].data=datiCasaTRM;
+
+    myChart.data.labels=trimestri
+    myChart.update();
+    FlagGiorni=false
+    FlagMesi=false
+    FlagTrimestri=true
+}
+
+function cambiaCasa(){
+    if(FlagGiorni){
+        myChart.data.datasets[0].data=datiCasaGG;
+    }
+    if(FlagMesi){
+        myChart.data.datasets[0].data=datiCasaMM;
+    }
+    if(FlagTrimestri){
+        myChart.data.datasets[0].data=datiCasaTRM;
+    }
+    FlagCasa=true
+    FlagFiume=false
+    FlagMare=false
+    myChart.update();
+}
+function cambiaFiume(){
+    if(FlagGiorni){
+        myChart.data.datasets[0].data=datiFiumeGG;
+    }
+    if(FlagMesi){
+        myChart.data.datasets[0].data=datiFiumeMM;
+    }
+    if(FlagTrimestri){
+        myChart.data.datasets[0].data=datiFiumeTRM;
+    }
+    FlagCasa=false
+    FlagFiume=true
+    FlagMare=false
+    myChart.update();
+}
+function cambiaMare(){
+    if(FlagGiorni){
+        myChart.data.datasets[0].data=datiMareGG;
+    }
+    if(FlagMesi){
+        myChart.data.datasets[0].data=datiMareMM;
+    }
+    if(FlagTrimestri){
+        myChart.data.datasets[0].data=datiMareTRM;
+    }
+    FlagCasa=false
+    FlagFiume=false
+    FlagMare=true
+    myChart.update();
+}
