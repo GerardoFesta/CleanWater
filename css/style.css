@@ -124,7 +124,128 @@ body {
   cursor: pointer;
 }
 
-.informationText #rilevazione {
+.formWrapper {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formWrapper .inputWrapper {
+  width: 75%;
+  margin-top: 40px;
+}
+
+.formWrapper .inputWrapper label {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+
+.formWrapper .inputWrapper input {
+  border: 0px;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 15px 5px 10px;
+  width: 255px;
+  text-align: center;
+}
+
+.formWrapper .inputWrapper input:focus {
+  border: 0px;
+}
+
+.formWrapper .inputWrapper.age {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+          
+}
+
+.formWrapper .inputWrapper.age input {
+  padding: 5px 15px;
+  width: 100%;
+}
+
+.formWrapper .inputWrapper.check {
+  margin-bottom: 40px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+}
+
+.formWrapper .inputWrapper.check label {
+  font-weight: 600;
+  font-size: 13px;
+  text-align: left;
+  line-height: 17px;
+  color:#3c37df;
+}
+
+.formWrapper .inputWrapper.check .outer {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #606060;
+  margin-right: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 111;
+}
+
+.formWrapper .inputWrapper.check .outer:hover {
+  cursor: pointer;
+}
+
+.formWrapper .inputWrapper.check .inner {
+  width: 0px;
+  height: 0px;
+  background-color: #b2df8a;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.informationText #heading {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -195,7 +316,7 @@ body {
   font-weight: 600;
   text-align: center;
   display: block;
-  margin: -20px auto auto auto;
+  margin: -40px auto auto auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
