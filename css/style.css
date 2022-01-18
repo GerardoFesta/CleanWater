@@ -59,7 +59,6 @@ body {
   font-weight: 600;
   font-size: 26px;
   color: #fff;
-  margin-left: 10px;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
@@ -208,42 +207,7 @@ body {
   width: 75%;
 }
 
-.formWrapper .inputWrapper.check label {
-  font-weight: 600;
-  font-size: 13px;
-  text-align: left;
-  line-height: 17px;
-  color:#3c37df;
-}
 
-.formWrapper .inputWrapper.check .outer {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #606060;
-  margin-right: 10px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: 111;
-}
-
-.formWrapper .inputWrapper.check .outer:hover {
-  cursor: pointer;
-}
-
-.formWrapper .inputWrapper.check .inner {
-  width: 0px;
-  height: 0px;
-  background-color: #b2df8a;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
 
 .main #TextSection #infoText {
   margin-top: 50px;
