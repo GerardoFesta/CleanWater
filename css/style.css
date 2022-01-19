@@ -235,6 +235,15 @@ body {
   
 }
 
+.informationText #aMammRErnest
+{
+  font-family: hpRegular;
+  color:black;
+  font-size: 35px ;
+  font-weight: 700;
+  text-align: center;
+}
+
 .informationText img:hover{
   cursor: pointer;
 }
@@ -552,4 +561,61 @@ body {
 
   .buttonDate #casa:hover,#fiume:hover,#mare:active{
     background-color: #37C4DF;
+  }
+  .boxAdviceCasa {
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    background-image: url('casa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 500px;
+  }
+  
+  .boxAdviceFiume {
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    background-image: url('fiume.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 500px;
+  }
+  
+  .boxAdviceMare {
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    background-image: url('mare.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 500px;
+  }
+  
+  
+  .boxForButton {
+    width: 480px;
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+  
+  }
+  .boxForButton .positionButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
