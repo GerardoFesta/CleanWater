@@ -482,14 +482,32 @@ body {
 }
 
 
-.boxBluetoothUsb .particleInfoBluetoothUsb p{
-  color:#000000 !important;
+.boxBluetoothUsb .particleInfoBluetoothUsb .usb p{
+  color:#707070 !important;
   font-weight: 550;
-  margin-inline: 20px;
+  text-align:justify;
+  margin-top: -20px;
+  padding-left: 20px;
+  margin-left: -65px;
+}
+.boxBluetoothUsb .particleInfoBluetoothUsb .bluetooth p{
+  color:#707070 !important;
+  font-weight: 550;
+  text-align:justify;
+  margin-top: -20px;
+  padding-right: 120px;
 }
 
 #datiRilevati{
   color:#6533DA;
   font-size: 25px;
   margin-left: 180px;
+}
+
+
+
+.positionTextConfigurazione p{
+  text-align: left;
+  color:#000;
+  margin-left: 115px;
 }
