@@ -4,36 +4,68 @@ REGcasa=true;
 REGfiume=false;
 REGmare=false;
 
+//PER ERASMO:
+//CREARE VARIABILI STRINGHE ES:"VERDE""GIALLO" ECC ASSEGNANDO L'RGBA RELATIVO AI COLORI COME STRINGA (LI PRENDI DA INTERNET)
+//MODIFICARE I VETTORI CHE CI SONO GIA' METTENDO DEI VALORI ALL'INTERNO
+//AGGIUNGERE DEI VETTORI DI TESTO, INSERENDO ALL'INTERNO LE VARIABILI CREATE IN CORRISPONDENZA DEI VALORI DEI VETTORI SOPRA
+
+
+
+
 //Mock dei dati di tutti gli utenti quando la visualizzazione è giornoxgiorno
 datiCasaGG=[12, 13, 34, 42, 11, 21, 11]
+//aggiungere vettore stringa colori 
 datiFiumeGG=[31, 55, 66, 77, 88, 88, 99]
+//aggiungere vettore stringa colori 
 datiMareGG=[12, 13, 34, 42, 11, 21, 100]
+//aggiungere vettore stringa colori 
+
 //Mock dei dati di tutti gli utenti quando la visualizzazione è xmese
 datiCasaMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//aggiungere vettore stringa colori 
 datiFiumeMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//aggiungere vettore stringa colori 
 datiMareMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//aggiungere vettore stringa colori 
+
 //Mock dei dati di tutti gli utenti quando la visualizzazione è x trimestre
 datiCasaTRM=[45,45,45,45]
+//aggiungere vettore stringa colori 
 datiFiumeTRM=[9,9,9,9]
+//aggiungere vettore stringa colori 
 datiMareTRM=[69,69,69,69]
+//aggiungere vettore stringa colori 
 
 //Mock dati personali utente siFlag vis giornaliera
 datiPersCasaGGFLAG=[12, 13, 34, 42, 11, 21, 11]
+//aggiungere vettore stringa colori 
 datiPersFiumeGGFLAG=[12, 13, 34, 42, 11, 21, 11]
+//aggiungere vettore stringa colori 
 datiPersMareGGFLAG=[12, 13, 34, 42, 11, 21, 11]
+//aggiungere vettore stringa colori 
+
 //Mock dati personali utente noFlag vis giornaliera
 datiPersCasaGG=[undefined, 13, 34, 42, 11, 21, 11]
+//aggiungere vettore stringa colori 
 datiPersFiumeGG=[undefined, 13, 34, 42, 11, 21, 11]
+//aggiungere vettore stringa colori 
 datiPersmareGG=[undefined, 13, 34, 42, 11, 21, 11]
+//aggiungere vettore stringa colori 
+
 //Mock dei dati personali utente quando la visualizzazione è xmese
 datiPersCasaMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//aggiungere vettore stringa colori 
 datiPersFiumeMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//aggiungere vettore stringa colori 
 datiPersMareMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
+//aggiungere vettore stringa colori 
 //Mock dei dati personali utente quando la visualizzazione è x trimestre
 datiPersCasaTRM=[12, 13, 34, 42]
+//aggiungere vettore stringa colori 
 datiPersFiumeTRM=[12, 13, 34, 42]
+//aggiungere vettore stringa colori 
 datiPersMareTRM=[12, 13, 34, 42]
-
+//aggiungere vettore stringa colori 
 
 //istanzio array label 7 giorni precedenti
 oggi= new Date()

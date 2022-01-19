@@ -13,10 +13,14 @@
     <button id="mesi" name="mesi" onclick="cambiaMesi();">MESI</button>
     <button id="giorni" name="giorni" onclick="cambiaGiorni();">GIORNI</button>
     <button id="trimestri" name="trimestri" onclick="cambiaTrimestri();">TRIMESTRI</button>
-    <canvas id="myChart" width="100" height="100"></canvas>
-    <button id="casa" name="casa" onclick="cambiaCasa();">CASA</button>
-    <button id="fiume" name="fiume" onclick="cambiaFiume();">FIUME</button>
-    <button id="mare" name="mare" onclick="cambiaMare();">MARE</button>
+    <div style="position: relative; height:500px; width:500px" >
+        <canvas id="myChart"></canvas>
+    </div>
+    <div>
+        <button id="casa" name="casa" onclick="cambiaCasa();">CASA</button>
+        <button id="fiume" name="fiume" onclick="cambiaFiume();">FIUME</button>
+        <button id="mare" name="mare" onclick="cambiaMare();">MARE</button>
+    </div>
     <script src="./script/chartsScript.js"></script>
 </body>
 </html>
