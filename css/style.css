@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: hpRegular;
+  src: url("./font/hp-simplified-265.ttf");
+}
+@font-face {
+  font-family: hpBold;
+  src: url("./font/hp-simplified-556.ttf");
+}
 
 body {
  
@@ -13,10 +20,9 @@ body {
   display: block;
   padding-top: 30px;
   width: 498px;
-  height: 700px;;
+  height: 96vh;;
   margin: auto;
   border: 1px solid black;
-  border-bottom: 0px;
   border-top: 0px;
 }
 
@@ -78,7 +84,8 @@ body {
 }
 
 .main #TextSection {
-  font-size: 20px;
+  font-family: hpRegular;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -217,14 +224,7 @@ body {
   text-align: center;
   color:#000000
 }
-@font-face {
-  font-family: hpRegular;
-  src: url("./font/hp-simplified-265.ttf");
-}
-@font-face {
-  font-family: hpBold;
-  src: url("./font/hp-simplified-556.ttf");
-}
+
 .informationText #heading {
   font-family: hpRegular;
   font-size: 35px ;
@@ -285,21 +285,33 @@ body {
   font-size: 25px;
   color:black;
   font-weight: 500; 
+  position: relative;
+  top:1px;
+  right:15px;
 }
 
 .waterQualityBox .particleTemp #value{
   font-size: 25px;
   color:black;
   font-weight: 500;
+  position: relative;
+  right:8px;
+  top:1px;
 }
 
 .particlePh img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  right: 8px;
+  bottom: 1px;
+
 }
 .particleTemp img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 5px;
 }
 
 
@@ -402,15 +414,18 @@ body {
 }
 .waterQualityBox .sfondoTemp{
   background-color: #fff;
-  padding: 10px;
+  position: relative;
+  bottom: 5px;
+  left: 30px;
+  padding: 5px;
   border-radius: 40px;
   margin-bottom: 20px;
   margin-top: 15px;
 }
 .waterQualityBox .sfondoPh{
   background-color: #fff;
-  padding: 10px;
-  margin-top: 15px;
+  position: relative;
+  right: 30px;
   border-radius: 40px;
 }
 
@@ -433,11 +448,13 @@ body {
 .boxBluetoothUsb {
   width: 400px;
   border-radius: 30px;
+  position: relative;
+  top: -170px;
   display: block;
   margin: 0 auto;
-  padding: 15px;
-  margin-top: 50px;
+  
 }
+
 .boxBluetoothUsb .particleInfoBluetoothUsb {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,9 +467,25 @@ body {
           align-items: center;
 }
 
+.boxBluetoothUsb .particleInfoBluetoothUsb .bluetooth img{
+  width: 195px; 
+  height: 195px;
+  position: relative;
+  left: 10px;
+}
+
+.boxBluetoothUsb .particleInfoBluetoothUsb .usb img{
+  width: 240px; 
+  height: 240px;
+  position: relative;
+  left: 20px;
+}
+
+
 .boxBluetoothUsb .particleInfoBluetoothUsb p{
-  color:#3c37df !important;
+  color:#000000 !important;
   font-weight: 550;
+  margin-inline: 20px;
 }
 
 #datiRilevati{
