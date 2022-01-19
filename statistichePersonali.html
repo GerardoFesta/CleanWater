@@ -7,19 +7,33 @@
     <title>Statistiche - Clean Water</title>
     <link rel="icon" href="./images/logo_cw.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="main">
       <div class="informationText">
         <p id="heading">Dati Personali<br></p> 
-      </div>
-        
-        <div class="navbar">
-            <img src="./images/advice.png" >
-            <img src="./images/home.png" >
-            <img src="./images/share.png" >
-        </div>
     </div>
+    <div class="buttonDate">
+      <button id="mesi" name="mesi" onclick="cambiaMesi();">MESI</button>
+      <button id="giorni" name="giorni" onclick="cambiaGiorni();">GIORNI</button>
+      <button id="trimestri" name="trimestri" onclick="cambiaTrimestri();">TRIMESTRI</button>
+   </div>
+    <div style="position:relative; height:500px; width:500px;"  >
+      <canvas id="myChart" height="300px"></canvas>
+    </div>
+    <div class="buttonDate">
+        <button id="casa" name="casa" onclick="cambiaCasa();">CASA</button>
+        <button id="fiume" name="fiume" onclick="cambiaFiume();">FIUME</button>
+        <button id="mare" name="mare" onclick="cambiaMare();">MARE</button>
+    </div>
+    <script src="./script/chartsScript.js"></script>
+      <div class="navbar">
+          <img src="./images/advice.png" >
+          <img src="./images/home.png" >
+          <img src="./images/share.png" >
+      </div>
+  </div>
     
 </body>
 </html>

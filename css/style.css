@@ -511,3 +511,45 @@ body {
   color:#000;
   margin-left: 115px;
 }
+.buttonDate{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  
+}
+.buttonDate #giorni,#mesi,#trimestri { 
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding: 5px;
+  width: 120px;
+  background: #3C37DFcd;
+  }
+  .buttonDate #casa,#fiume,#mare { 
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 5px;
+    width: 120px;
+    border-radius: 20px;
+    background: #3C37DFcd;
+    }
+  .buttonDate #giorni:hover,#mesi:hover,#trimestri:active{
+    background-color: #37C4DF;
+  }
+
+  .buttonDate #casa:hover,#fiume:hover,#mare:active{
+    background-color: #37C4DF;
+  }

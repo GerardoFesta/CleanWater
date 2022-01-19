@@ -14,13 +14,15 @@
       <div class="informationText">
         <p id="heading">Dati Condivisi<br></p> 
       </div>
-      <button id="mesi" name="mesi" onclick="cambiaMesi();">MESI</button>
-      <button id="giorni" name="giorni" onclick="cambiaGiorni();">GIORNI</button>
-      <button id="trimestri" name="trimestri" onclick="cambiaTrimestri();">TRIMESTRI</button>
-      <div style="position:relative; height:500px; width:500px; top:100px"  >
-        <canvas id="myChart"></canvas>
+      <div class="buttonDate">
+        <button id="mesi" name="mesi" onclick="cambiaMesi();">MESI</button>
+        <button id="giorni" name="giorni" onclick="cambiaGiorni();">GIORNI</button>
+        <button id="trimestri" name="trimestri" onclick="cambiaTrimestri();">TRIMESTRI</button>
+     </div>
+      <div style="position:relative; height:500px; width:500px;"  >
+        <canvas id="myChart" height="300px"></canvas>
       </div>
-      <div>
+      <div class="buttonDate">
           <button id="casa" name="casa" onclick="cambiaCasa();">CASA</button>
           <button id="fiume" name="fiume" onclick="cambiaFiume();">FIUME</button>
           <button id="mare" name="mare" onclick="cambiaMare();">MARE</button>
