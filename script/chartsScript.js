@@ -97,7 +97,7 @@ const myChart = new Chart(ctx, {
     data: {
         labels: days,
         datasets: [{
-            label: 'Qualità delle rilevazioni',
+            label: 'Qualità media delle rilevazioni',
             data: [12, 13, 34, 42, 11, 21, 11],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -220,6 +220,14 @@ function cambiaCasa(){
     FlagFiume=false
     FlagMare=false
     myChart.update();
+
+    document.getElementById("casa").style.backgroundColor="#053966"
+    document.getElementById("casa").style.border="inset;" 
+
+    document.getElementById("fiume").style.backgroundColor="#3195EB"
+    document.getElementById("fiume").style.border="" 
+    document.getElementById("mare").style.backgroundColor="#3195EB"
+    document.getElementById("mare").style.border="" 
 }
 function cambiaFiume(){
     if(FlagGiorni){
@@ -235,6 +243,14 @@ function cambiaFiume(){
     FlagFiume=true
     FlagMare=false
     myChart.update();
+
+    document.getElementById("fiume").style.backgroundColor="#053966"
+    document.getElementById("fiume").style.border="inset;" 
+
+    document.getElementById("casa").style.backgroundColor="#3195EB"
+    document.getElementById("casa").style.border="" 
+    document.getElementById("mare").style.backgroundColor="#3195EB"
+    document.getElementById("mare").style.border="" 
 }
 function cambiaMare(){
     if(FlagGiorni){
@@ -250,4 +266,12 @@ function cambiaMare(){
     FlagFiume=false
     FlagMare=true
     myChart.update();
+
+    document.getElementById("mare").style.backgroundColor="#053966"
+    document.getElementById("mare").style.border="inset;" 
+
+    document.getElementById("fiume").style.backgroundColor="#3195EB"
+    document.getElementById("fiume").style.border="" 
+    document.getElementById("casa").style.backgroundColor="#3195EB"
+    document.getElementById("casa").style.border="" 
 }
