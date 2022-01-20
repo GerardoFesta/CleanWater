@@ -532,28 +532,35 @@ body {
             align-items: center;
   
 }
+
 .buttonDate #giorni,#mesi,#trimestri { 
   outline: none;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font: bold 12px Arial, Helvetica, sans-serif;
+  font:  Arial, Helvetica, sans-serif;
+  font-size: 16px;
   color: #fff;
   padding: 5px;
   width: 120px;
-  background: #3C37DFcd;
+  height: 45px;
+  background-color: #3195EB;
+  border-radius: 50px;
   }
   .buttonDate #casa,#fiume,#mare { 
     outline: none;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    font: bold 12px Arial, Helvetica, sans-serif;
+    font:  Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color: #fff;
     padding: 5px;
     width: 120px;
+    height: 45px;
     border-radius: 20px;
-    background: #3C37DFcd;
+    background-color: #3195EB;
+    border-radius: 50px;
     }
   .buttonDate #giorni:hover,#mesi:hover,#trimestri:hover{
     background-color: #00d5ff;
@@ -601,7 +608,6 @@ body {
   
   .boxForButton {
     width: 480px;
-    border: 8px solid rgb(255, 255, 255);
     border-radius: 30px;
     display: block;
     margin: 0 auto;
@@ -619,3 +625,73 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+
+
+  .buttonHome{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  
+}
+.buttonHome #casahome, #fiumehome, #marehome { 
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-family: hpRegular;
+  font-size: 30px;
+  padding: 30px;
+  width: 450px;
+  height: 90px;
+  }
+.buttonHome #fiumehome { 
+  background-image: url("fiume.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 450px 350px;
+  }
+.buttonHome #marehome {
+    background-image: url("mare.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 450px 350px;
+    }
+.buttonHome #casahome { 
+background-image: url("casaHome.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 450px 350px;
+}
+
+.boxAdviceCasa .particleConsigli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.boxAdviceCasa .sfondo{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 40px;
+}
+.boxAdviceCasa .innerBox {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
