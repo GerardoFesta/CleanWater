@@ -555,12 +555,12 @@ body {
     border-radius: 20px;
     background: #3C37DFcd;
     }
-  .buttonDate #giorni:hover,#mesi:hover,#trimestri:active{
-    background-color: #37C4DF;
+  .buttonDate #giorni:hover,#mesi:hover,#trimestri:hover{
+    background-color: #00d5ff;
   }
 
-  .buttonDate #casa:hover,#fiume:hover,#mare:active{
-    background-color: #37C4DF;
+  .buttonDate #casa:hover,#fiume:hover,#mare:hover{
+    background-color: #00d5ff;
   }
   .boxAdviceCasa {
     width: 400px;
