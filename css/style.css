@@ -105,6 +105,7 @@ body {
  height: 100vh;
 }
 
+
 .navbar {
   position:fixed;
   bottom: 0;
@@ -123,11 +124,42 @@ body {
           align-items: center;
 }
 
+.navbarHome {
+  position:fixed;
+  bottom: 0;
+  width: 499px;
+  height: 8vh;
+  border-bottom: 1px solid black;
+  background-color: #3195EB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar img {
   width: 60px;
   height: 60px;
   padding: 15px;
 }
+
+.navbarHome img {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+}
+.navbarHome #advice {
+display: none;
+}
+.navbarHome #share {
+  display: none;
+  }
+
 
 .navbar img:hover {
   cursor: pointer;
@@ -235,7 +267,7 @@ body {
   
 }
 
-.informationText #aMammRErnest
+.informationText #rilevazioneHome
 {
   font-family: hpRegular;
   color:black;
@@ -563,11 +595,11 @@ body {
     border-radius: 50px;
     }
   .buttonDate #giorni:hover,#mesi:hover,#trimestri:hover{
-    background-color: #00d5ff;
+    background-color: #00d5ff !important;
   }
 
   .buttonDate #casa:hover,#fiume:hover,#mare:hover{
-    background-color: #00d5ff;
+    background-color: #00d5ff !important;
   }
   .boxAdviceCasa {
     width: 400px;
@@ -657,13 +689,13 @@ body {
   height: 90px;
   }
 .buttonHome #fiumehome { 
-  background-image: url("fiume.jpeg");
+  background-image: url("fiumeHome.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 450px 350px;
   }
 .buttonHome #marehome {
-    background-image: url("mare.jpg");
+    background-image: url("mareHome.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 450px 350px;
@@ -676,6 +708,7 @@ background-size: 450px 350px;
 }
 
 .boxAdviceCasa .particleConsigli {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,10 +721,44 @@ background-size: 450px 350px;
 }
 .boxAdviceCasa .sfondo{
   background-color: #fff;
-  padding: 10px;
   border-radius: 40px;
+  margin-bottom: 20px;
 }
-.boxAdviceCasa .innerBox {
-  margin-top: 70px;
+
+
+.boxAdviceFiume .particleConsigli {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.boxAdviceFiume .sfondo{
+  background-color: #fff;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+
+.boxAdviceMare .particleConsigli {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.boxAdviceMare .sfondo{
+  background-color: #fff;
+  border-radius: 40px;
   margin-bottom: 20px;
 }
