@@ -806,3 +806,17 @@ background-size: 450px 350px;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
+.rilevazione{
+  text-align: center;
+}
+.rilevazione p{
+  color: #000;
+  font-size: 20px;
+  margin-top: -22px;
+}
+.rilevazione img{
+  position: relative;
+  bottom: 20px;
+  height:450px;
+  width:430px;
+}
