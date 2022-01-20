@@ -151,6 +151,14 @@ function cambiaMesi(){
     FlagGiorni=false
     FlagMesi=true
     FlagTrimestri=false
+
+    document.getElementById("mesi").style.backgroundColor="#053966"
+    document.getElementById("mesi").style.border="inset;" 
+
+    document.getElementById("giorni").style.backgroundColor="#3195EB"
+    document.getElementById("giorni").style.border="" 
+    document.getElementById("trimestri").style.backgroundColor="#3195EB"
+    document.getElementById("trimestri").style.border="" 
 }
 function cambiaGiorni(){
     if(FlagMare)
@@ -165,6 +173,14 @@ function cambiaGiorni(){
     FlagGiorni=true
     FlagMesi=false
     FlagTrimestri=false
+
+    document.getElementById("giorni").style.backgroundColor="#053966"
+    document.getElementById("giorni").style.border="inset;" 
+
+    document.getElementById("mesi").style.backgroundColor="#3195EB"
+    document.getElementById("mesi").style.border="" 
+    document.getElementById("trimestri").style.backgroundColor="#3195EB"
+    document.getElementById("trimestri").style.border="" 
 }
 function cambiaTrimestri(){
     if(FlagMare)
@@ -179,6 +195,15 @@ function cambiaTrimestri(){
     FlagGiorni=false
     FlagMesi=false
     FlagTrimestri=true
+
+    document.getElementById("trimestri").style.backgroundColor="#053966"
+    document.getElementById("trimestri").style.backgroundColor.border="inset;" 
+
+    document.getElementById("mesi").style.backgroundColor="#3195EB"
+    document.getElementById("mesi").style.border="" 
+    document.getElementById("giorni").style.backgroundColor="#3195EB"
+    document.getElementById("giorni").style.border="" 
+    
 }
 
 function cambiaCasa(){
