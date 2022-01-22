@@ -7,6 +7,8 @@
     <title>Clean Water - Registrazione </title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/logo_cw.png">
+    <script src="./script/registrazioneScripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -15,24 +17,29 @@
     </div>
         <form class="formWrapper">
             <div class="inputWrapper nome">
-                <input type="text" name="nome" placeholder="Nome"> 
+                <input type="text" id="nome" name="nome" placeholder="Nome"> 
+                <p><span id="spanome" style="display:none;font-family: 'Josefin Sans', sans-serif;"><i class="fa fa-info-circle" aria-hidden="true"></i> Compila questo campo </span></p>
             </div>
             <div class="inputWrapper cognome">
-                <input type="text" name="cognome" placeholder="Cognome"> 
+                <input type="text" id="cognome" name="cognome" placeholder="Cognome"> 
+                <p><span id="spancognome" style="display:none;font-family: 'Josefin Sans', sans-serif;"><i class="fa fa-info-circle" aria-hidden="true"></i> Compila questo campo </span></p>
             </div>
             <div class="inputWrapper email">
-                <input type="email" name="email" placeholder="user@email.com">
+                <input type="email" id="email" name="email" placeholder="user@email.com">
+                <p><span id="spanmail" style="display:none;font-family: 'Josefin Sans', sans-serif;"><i class="fa fa-info-circle" aria-hidden="true"></i> Inserisci una mail validaz </span></p>
             </div>
             <div class="inputWrapper age">
-                <input type="number" name="age" min="16" placeholder="16">
+                <input type="number" id="age" name="age" min="16" placeholder="16">
+                <p><span id="spanage" style="display:none;font-family: 'Josefin Sans', sans-serif;"><i class="fa fa-info-circle" aria-hidden="true"></i> Compila questo campo (età minima 16 anni) </span></p>
             </div>
             <div class="inputWrapper check">
-                <input type="checkbox" name="trattamento">
+                <input type="checkbox" name="trattamento" id="trattamento">
                 Acconsento al trattamento dei dati personali.
+                <p><span id="spancheck" style="display:none;font-family: 'Josefin Sans', sans-serif;"><i class="fa fa-info-circle" aria-hidden="true"></i> Devi accettare l'informativa per proseguire </span></p>
             </div>
-            <div class="button config"> 
+            <div class="button config" onclick="controllodati()"> 
                     <p>Iscriviti </p>
-            </div>
+                    </div>
         </form>
     </div>
 </body>
