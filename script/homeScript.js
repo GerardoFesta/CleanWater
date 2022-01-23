@@ -13,6 +13,21 @@ $("#casahome").on("click",allcasa);
 $("#marehome").on("click",allmare);
 $("#fiumehome").on("click",allfiume);
 
+$("#bottonehome").click(function(){
+    if($("#casahome").is(":visible")){
+        localStorage.setItem("casa",true);
+        window.location.href="./rilevazioneCasa.html";
+    }
+    if($("#marehome").is(":visible")){
+        localStorage.setItem("mare",true);
+        window.location.href="./rilevazioneMare.html";
+    }
+    if($("#fiumehome").is(":visible")){
+        localStorage.setItem("fiume",true);
+        window.location.href="./rilevazioneFiume.html";
+    }
+})
+
 function allcasa(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di casa?")
     $("#fiumehome").hide();
@@ -23,7 +38,6 @@ function allcasa(){
 }
 /*
 function restrcasa(){
-    alert("madonna")
     $("#fiumehome").show();
     $("#marehome").show();
     $("#casahome").animate({height: "90px"});
