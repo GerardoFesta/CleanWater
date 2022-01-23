@@ -1,6 +1,3 @@
-if(localStorage.getItem("nome")!=null){
-    window.location.href="./home.html";
-}
 
 
 var script = document.createElement("script");

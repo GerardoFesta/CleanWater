@@ -1,7 +1,9 @@
 if(localStorage.getItem("nome")==null){
     window.location.href="./registrazione.html";
 }
-
+if(localStorage.getItem("nome")==null){
+    
+}
 var script = document.createElement("script");
 script.src = "https://code.jquery.com/jquery-3.4.1.min.js";
 script.type = "text/javascript";
@@ -13,17 +15,31 @@ $("#casahome").on("click",allcasa);
 $("#marehome").on("click",allmare);
 $("#fiumehome").on("click",allfiume);
 
+$("#bottonehome").click(function(){
+    if($("#casahome").is(":visible")){
+        localStorage.setItem("casa",true);
+        window.location.href="./rilevazioneCasa.html";
+    }
+    if($("#marehome").is(":visible")){
+        localStorage.setItem("mare",true);
+        window.location.href="./rilevazioneMare.html";
+    }
+    if($("#fiumehome").is(":visible")){
+        localStorage.setItem("fiume",true);
+        window.location.href="./rilevazioneFiume.html";
+    }
+})
+
 function allcasa(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di casa?")
     $("#fiumehome").hide();
     $("#marehome").hide();
-    $("#casahome").animate({height: "300px"});
+    $("#casahome").animate({height: "220px"});
     $("#casahome").attr('disabled', true);
     $("#bottonehome").show();
 }
 /*
 function restrcasa(){
-    alert("madonna")
     $("#fiumehome").show();
     $("#marehome").show();
     $("#casahome").animate({height: "90px"});
@@ -35,7 +51,7 @@ function allfiume(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di un fiume?")
     $("#casahome").hide();
     $("#marehome").hide();
-    $("#fiumehome").animate({height: "300px"});
+    $("#fiumehome").animate({height: "220px"});
     $("#fiumehome").attr('disabled', true);
     $("#bottonehome").show();
 }
@@ -53,7 +69,7 @@ function allmare(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di mare?")
     $("#casahome").hide();
     $("#fiumehome").hide();
-    $("#marehome").animate({height: "300px"});
+    $("#marehome").animate({height: "220px"});
     $("#marehome").attr('disabled', true);
     $("#bottonehome").show();
 }

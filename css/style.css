@@ -184,9 +184,19 @@ display: none;
           align-items: center;
 }
 
+
+
+
 .formWrapper .inputWrapper {
   width: 75%;
   margin-top: 40px;
+}
+
+.inputWrapper #datiPersonali{
+  color:black;
+  font-size: 13px;
+  position: relative;
+  right: 30px; 
 }
 
 .formWrapper .inputWrapper label {
@@ -233,7 +243,7 @@ display: none;
 }
 
 .formWrapper .inputWrapper.check {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -365,7 +375,7 @@ display: none;
   margin-bottom: 25px;
 }
 
-.gauge .infoGauge #percentage {
+.gauge .infoGauge #percentageCasa {
   color:#67e46e;
   font-size: 28px;
   font-weight: 600;
@@ -376,6 +386,29 @@ display: none;
   width: -moz-fit-content;
   width: fit-content;
 }
+.gauge .infoGauge #percentageFiume {
+  color:#FFDD00;
+  font-size: 28px;
+  font-weight: 600;
+  display: block;
+  margin-left: 90px;
+  margin-bottom: -15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.gauge .infoGauge #percentageMare {
+  color:#FF0303;
+  font-size: 28px;
+  font-weight: 600;
+  display: block;
+  margin-left: 90px;
+  margin-bottom: -15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 
 .waterQualityBox {
   width: 400px;
@@ -904,4 +937,127 @@ background-size: 450px 350px;
 
 .share2 img:hover{
 cursor: pointer;
+}
+
+.formWrapper #spanome{
+color:red;
+font-size: 15px;
+position: fixed;
+}
+.formWrapper #spanome{
+color:red;
+font-size: 15px;
+position: fixed;
+}
+.formWrapper #spancognome{
+color:red;
+font-size: 15px;
+position: fixed;
+}
+.formWrapper #spanmail{
+color:red;
+font-size: 15px;
+position: fixed; 
+}
+.formWrapper #spanage{
+color:red;
+font-size: 15px;
+position: fixed;
+}
+.formWrapper #spancheck{
+color:red;
+font-size: 15px;
+position: fixed;
+}
+.formWrapper #positionTextReg{
+  position: relative;
+  right: 70px;
+  bottom: 10px
+}
+.formWrapper #positionTextRegcheck{
+  position: relative;
+  right: 275px;
+  top: 40px;
+}
+ /* Center the loader */
+ #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#riuscito {
+  display: none;
+  text-align: center;
+}
+
+.overlay {
+    background: #e9e9e9;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+#bottonehome {
+  background-color: #3195EB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 65px;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 26px;
+  color: #fff;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+  border-radius: 50px;
 }
