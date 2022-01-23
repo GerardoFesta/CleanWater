@@ -10,62 +10,77 @@ REGmare=false;
 //AGGIUNGERE DEI VETTORI DI TESTO, INSERENDO ALL'INTERNO LE VARIABILI CREATE IN CORRISPONDENZA DEI VALORI DEI VETTORI SOPRA
 
 
-
+rosso="rgba(240, 20, 12, 0.8)"
+giallo="rgba(253, 215, 0, 0.8)"
+verdes="rgba(66, 116, 29, 0.8)"
+verdec="rgba(99, 232, 4, 0.8)"
 
 //Mock dei dati di tutti gli utenti quando la visualizzazione è giornoxgiorno
-datiCasaGG=[12, 13, 34, 42, 11, 21, 11]
-//aggiungere vettore stringa colori 
-datiFiumeGG=[31, 55, 66, 77, 88, 88, 99]
-//aggiungere vettore stringa colori 
-datiMareGG=[12, 13, 34, 42, 11, 21, 100]
-//aggiungere vettore stringa colori 
+datiCasaGG=[15, 35, 51, 24, 65, 90, 18]
+coloriCasaGG=[rosso, giallo, verdes, rosso, verdes, verdec, rosso]
 
+datiFiumeGG=[31, 55, 66, 77, 88, 99, 24]
+coloriFiumeGG=[giallo, verdes, verdes, verdec, verdec, verdec, rosso]
+
+datiMareGG=[76, 70, 80, 49, 35, 21, 18]
+coloriMareGG=[verdec, verdes, verdec, giallo, giallo, rosso, rosso]
 //Mock dei dati di tutti gli utenti quando la visualizzazione è xmese
-datiCasaMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
-//aggiungere vettore stringa colori 
-datiFiumeMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
-//aggiungere vettore stringa colori 
-datiMareMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
-//aggiungere vettore stringa colori 
+datiCasaMM=[45, 65, 55, 76, 88, 80, 49, 47, 24, 45, 52, 80]
+coloriCasaMM=[giallo, verdes, verdes, verdec, verdec, verdec, giallo, giallo, rosso, giallo, verdes, verdec]
 
+datiFiumeMM=[55, 78, 58, 60, 95, 85, 76, 58, 35, 65, 77, 47]
+coloriFiumeMM=[verdes, verdec, verdes, verdes, verdec, verdec, verdec, verdes, giallo, verdes, verdec, giallo]
+
+datiMareMM=[48, 38, 68, 76, 85, 68, 35, 18, 60, 70, 80, 65]
+coloriMareMM=[giallo, giallo, verdes, verdec, verdec, verdes, giallo, rosso, verdes, verdes, verdec, verdes]
 //Mock dei dati di tutti gli utenti quando la visualizzazione è x trimestre
-datiCasaTRM=[45,45,45,45]
-//aggiungere vettore stringa colori 
-datiFiumeTRM=[9,9,9,9]
-//aggiungere vettore stringa colori 
-datiMareTRM=[69,69,69,69]
-//aggiungere vettore stringa colori 
+datiCasaTRM=[55, 81, 40, 45, 59]
+coloriCasaTRM=[verdes, verdec, giallo, verdes]
+
+datiFiumeTRM=[64, 80, 56, 63]
+coloriFiumeTRM=[verdes, verdec, verdes, verdes]
+
+datiMareTRM=[51, 76, 38, 72]
+coloriMareTRM=[verdes, verdec, giallo, verdes]
 
 //Mock dati personali utente siFlag vis giornaliera
-datiPersCasaGGFLAG=[12, 13, 34, 42, 11, 21, 11]
-//aggiungere vettore stringa colori 
-datiPersFiumeGGFLAG=[12, 13, 34, 42, 11, 21, 11]
-//aggiungere vettore stringa colori 
-datiPersMareGGFLAG=[12, 13, 34, 42, 11, 21, 11]
-//aggiungere vettore stringa colori 
+datiPersCasaGGFLAG=[10, 40, 42, 35, 74, 88, 24]
+coloriPersCasaGGFLAG=[rosso, giallo, giallo, giallo, verdes, verdec, rosso]
 
+datiPersFiumeGGFLAG=[24, 49, 75, 80, 90, 91, 26]
+coloriPersFiumeGGFLAG=[rosso, giallo, verdec, verdec, verdec, verdec, giallo]
+
+datiPersMareGGFLAG=[73, 65, 74, 51, 28, 18, 20]
+coloriPersMareGGFLAG=[verdes, verdes, verdes, verdes, giallo, rosso, rosso]
 //Mock dati personali utente noFlag vis giornaliera
-datiPersCasaGG=[undefined, 13, 34, 42, 11, 21, 11]
-//aggiungere vettore stringa colori 
-datiPersFiumeGG=[undefined, 13, 34, 42, 11, 21, 11]
-//aggiungere vettore stringa colori 
-datiPersmareGG=[undefined, 13, 34, 42, 11, 21, 11]
-//aggiungere vettore stringa colori 
+datiPersCasaGG=[undefined, 40, 42, 35, 74, 88, 24]
+coloriPersCasaGG=[rosso, giallo, giallo, giallo, verdes, verdec, rosso]
 
+datiPersFiumeGG=[undefined, 49, 75, 80, 90, 91, 26]
+coloriPersFiumeGG=[rosso, giallo, verdec, verdec, verdec, verdec, giallo]
+
+datiPersMareGG=[undefined, 65, 74, 51, 28, 18, 20]
+coloriPersMareGG=[rosso, verdes, verdes, verdes, giallo, rosso, rosso]
 //Mock dei dati personali utente quando la visualizzazione è xmese
-datiPersCasaMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
-//aggiungere vettore stringa colori 
-datiPersFiumeMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
-//aggiungere vettore stringa colori 
-datiPersMareMM=[12, 13, 34, 42, 11, 21, 11, 33, 44, 66, 77, 88]
-//aggiungere vettore stringa colori 
+
+datiPersCasaMM=[51, 68, 49, 80, 90, 82, 46, 52, 26, 49, 53, 87]
+coloriPersCasaMM=[verdes, verdes, giallo, verdec, verdec, verdec, giallo, verdes, giallo, giallo, verdes, verdec]
+
+datiPersFiumeMM=[49, 77, 63, 65, 96, 83, 74, 61, 40, 70, 80, 44]
+coloriPersFiumeMM=[giallo, verdec, verdes, verdes, verdec, verdec, verdes, verdes, giallo, verdes, verdec, giallo]
+
+datiPersMareMM=[40, 30, 70, 73, 80, 63, 24, 13, 49, 71, 83, 69]
+coloriPersMareMM=[giallo, giallo, verdes, verdes, verdec, verdes, rosso, rosso, giallo, verdes, verdec, verdes]
 //Mock dei dati personali utente quando la visualizzazione è x trimestre
-datiPersCasaTRM=[12, 13, 34, 42]
-//aggiungere vettore stringa colori 
-datiPersFiumeTRM=[12, 13, 34, 42]
-//aggiungere vettore stringa colori 
-datiPersMareTRM=[12, 13, 34, 42]
-//aggiungere vettore stringa colori 
+
+datiPersCasaTRM=[56, 84, 41, 63]
+coloriPersCasaTRM=[verdes, verdec, giallo, verdes]
+
+datiPersFiumeTRM=[63, 81, 58, 65]
+coloriPersFiumeTRM=[verdes, verdec, verdes, verdes]
+
+datiPersMareTRM=[47, 72, 29, 74]
+coloriPersMareTRM=[giallo, verdes, giallo, verdes]
 
 //istanzio array label 7 giorni precedenti
 oggi= new Date()
