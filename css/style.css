@@ -375,7 +375,7 @@ display: none;
   margin-bottom: 25px;
 }
 
-.gauge .infoGauge #percentage {
+.gauge .infoGauge #percentageCasa {
   color:#67e46e;
   font-size: 28px;
   font-weight: 600;
@@ -386,6 +386,29 @@ display: none;
   width: -moz-fit-content;
   width: fit-content;
 }
+.gauge .infoGauge #percentageFiume {
+  color:#FFDD00;
+  font-size: 28px;
+  font-weight: 600;
+  display: block;
+  margin-left: 90px;
+  margin-bottom: -15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.gauge .infoGauge #percentageMare {
+  color:#FF0303;
+  font-size: 28px;
+  font-weight: 600;
+  display: block;
+  margin-left: 90px;
+  margin-bottom: -15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 
 .waterQualityBox {
   width: 400px;
