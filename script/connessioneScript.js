@@ -18,7 +18,8 @@ function connetti(){
             title: 'Connessione riuscita!',
             text: 'Benvenuto in CleanWater',
             icon: 'success',
-            confirmButtonText: 'Avanti'
+            confirmButtonText: 'Avanti',
+            allowOutsideClick: false
         }).then((result) => {
             if (result.isConfirmed) {
                 window.location.href="./home.html"
