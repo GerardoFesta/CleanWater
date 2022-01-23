@@ -48,7 +48,10 @@ function controlloinput(){
         flag=false
         retflag=false
     }
-    if(flag) $("#spancheck").css("display", "none")
+    if(flag){
+        $("#spancheck").css("display", "none")
+        $('#trattamento').off('focus');
+    } 
     flag=true
 
     if(document.getElementById("nome").value.length==0){
@@ -56,7 +59,10 @@ function controlloinput(){
         flag=false;
         retflag=false
     }
-    if(flag)$("#spanome").css("display", "none")
+    if(flag){
+        $("#spanome").css("display", "none")
+        $('#nome').off('focus');
+    }
     flag=true
 
     if(document.querySelector("#cognome").value===""){
@@ -64,7 +70,10 @@ function controlloinput(){
         flag=false;
         retflag=false
     }
-    if(flag)$("#spancognome").css("display", "none")
+    if(flag){
+        $("#spancognome").css("display", "none")
+        $('#cognome').off('focus');
+    }
     flag=true
 
     mail=document.querySelector("#email").value
@@ -73,15 +82,22 @@ function controlloinput(){
         flag=false;
         retflag=false
     }
-    if(flag)$("#spanmail").css("display", "none")
-    flag=true
+    if(flag){
+        $("#spanmail").css("display", "none")
+        $('#email').off('focus');
+    }
+        flag=true
 
     if(document.querySelector("#age").value===""||document.querySelector("#age").value<16){
         $("#age").focus();
         flag=false;
         retflag=false
     }
-    if(flag)$("#spanage").css("display", "none")
+    if(flag){
+        $("#spanage").css("display", "none")
+        $('#age').off('focus');
+    
+    }
 
     return retflag;
 }
