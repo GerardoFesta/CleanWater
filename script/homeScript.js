@@ -53,6 +53,74 @@ $("#bottStatistiche").click(function(){
 })
 
 
+$(document).on('click', '#fb', function() {
+    Swal.fire({
+        title: 'Condivisione andata a buon fine!',
+        text:"Grazie per il tuo supporto",
+        showConfirmButton: true,
+        icon:"confirm"
+    })
+});
+
+$(document).on('click', '#tele', function() {
+    Swal.fire({
+        title: 'Condivisione andata a buon fine!',
+        text:"Grazie per il tuo supporto",
+        showConfirmButton: true,
+        icon:"confirm"
+    })
+});
+
+$(document).on('click', '#twt', function() {
+    Swal.fire({
+        title: 'Condivisione andata a buon fine!',
+        text:"Grazie per il tuo supporto",
+        showConfirmButton: true,
+        icon:"confirm"
+    })
+});
+
+$(document).on('click', '#env', function() {
+    Swal.fire({
+        title: 'Condivisione andata a buon fine!',
+        text:"Grazie per il tuo supporto",
+        showConfirmButton: true,
+        icon:"confirm"
+    })
+});
+
+
+
+$("#share").click(function(){
+    Swal.fire({
+        title: 'Condividi le tue rilevazioni',
+        html:""+
+        '<a class="fa fa-facebook" id="fb"></a>'+
+        '<a href="#" class="fa fa-twitter" id="twt"></a>'+
+        '<a href="#" class="fa fa-envelope" id="env"></a>'+
+        '<a href="#" class="fa fa-telegram" id="tele"></a>'+"<br><br>",
+        showCancelButton: false,
+        showConfirmButton: false,
+    })
+    
+})
+
+
+
+$(document).on('click', '.SwalBtn1', function() {
+    localStorage.setItem("statsUtente",true);
+    localStorage.setItem("statsCondivise",false);
+    swal.clickConfirm();
+    window.location.href="./statistiche.html";
+});
+$(document).on('click', '.SwalBtn2', function() { 
+    localStorage.setItem("statsUtente",false);
+    localStorage.setItem("statsCondivise",true);
+    swal.clickConfirm();
+    window.location.href="./statistiche.html";
+});
+
+
 function allcasa(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di casa?")
     $("#fiumehome").hide();

@@ -1,13 +1,19 @@
+if(localStorage.getItem("nome")==null||((localStorage.getItem("casa")==null)&&(localStorage.getItem("fiume")==null)&&(localStorage.getItem("mare")==null))||((localStorage.getItem("statsUtente")==null)&&(localStorage.getItem("statsCondivise")==null))){
+    window.location.href="./home.html";
+}
 
-//placeholder per i Flag
-REGcasa=true;
-REGfiume=false;
-REGmare=false;
 
-//PER ERASMO:
-//CREARE VARIABILI STRINGHE ES:"VERDE""GIALLO" ECC ASSEGNANDO L'RGBA RELATIVO AI COLORI COME STRINGA (LI PRENDI DA INTERNET)
-//MODIFICARE I VETTORI CHE CI SONO GIA' METTENDO DEI VALORI ALL'INTERNO
-//AGGIUNGERE DEI VETTORI DI TESTO, INSERENDO ALL'INTERNO LE VARIABILI CREATE IN CORRISPONDENZA DEI VALORI DEI VETTORI SOPRA
+REGcasa=localStorage.getItem("casa")
+REGfiume=localStorage.getItem("fiume")
+REGmare=localStorage.getItem("mare")
+
+richiestaUtente=localStorage.getItem("statsUtente")
+richiestaCondivise=localStorage.getItem("statsCondivise")
+
+
+if(richiestaUtente==="false"){
+    document.getElementById("heading").innerHTML="Statistiche Condivise"
+}
 
 
 rosso="rgba(240, 20, 12, 0.8)"
@@ -16,71 +22,86 @@ verdes="rgba(66, 116, 29, 0.8)"
 verdec="rgba(99, 232, 4, 0.8)"
 
 //Mock dei dati di tutti gli utenti quando la visualizzazione è giornoxgiorno
-datiCasaGG=[15, 35, 51, 24, 65, 90, 18]
-coloriCasaGG=[rosso, giallo, verdes, rosso, verdes, verdec, rosso]
 
-datiFiumeGG=[31, 55, 66, 77, 88, 99, 24]
-coloriFiumeGG=[giallo, verdes, verdes, verdec, verdec, verdec, rosso]
+if(richiestaUtente){
+    if(REGcasa){
+        datiCasaGG=[100, 40, 42, 35, 74, 88, 24]
+        coloriCasaGG=[verdec, giallo, giallo, giallo, verdes, verdec, rosso]
+    }else{
+        datiCasaGG=[undefined, 40, 42, 35, 74, 88, 24]
+        coloriCasaGG=[rosso, giallo, giallo, giallo, verdes, verdec, rosso]
+    }
+    
+    if(REGfiume){
+        datiFiumeGG=[60, 49, 75, 80, 90, 91, 26]
+        coloriFiumeG=[verdes, giallo, verdec, verdec, verdec, verdec, giallo]
+    }else{
+        datiFiumeGG=[undefined, 49, 75, 80, 90, 91, 26]
+        coloriFiumeGG=[rosso, giallo, verdec, verdec, verdec, verdec, giallo]
+    }
+    if(REGmare){
+        datiMareGG=[20, 65, 74, 51, 28, 18, 20]
+        coloriMareGG=[rosso, verdes, verdes, verdes, giallo, rosso, rosso]
+    }else{
+        datiMareGG=[undefined, 65, 74, 51, 28, 18, 20]
+        coloriMareGG=[rosso, verdes, verdes, verdes, giallo, rosso, rosso]
+    }
+    datiCasaMM=[51, 68, 49, 80, 90, 82, 46, 52, 26, 49, 53, 87]
+    coloriCasaMM=[verdes, verdes, giallo, verdec, verdec, verdec, giallo, verdes, giallo, giallo, verdes, verdec]
 
-datiMareGG=[76, 70, 80, 49, 35, 21, 18]
-coloriMareGG=[verdec, verdes, verdec, giallo, giallo, rosso, rosso]
-//Mock dei dati di tutti gli utenti quando la visualizzazione è xmese
-datiCasaMM=[45, 65, 55, 76, 88, 80, 49, 47, 24, 45, 52, 80]
-coloriCasaMM=[giallo, verdes, verdes, verdec, verdec, verdec, giallo, giallo, rosso, giallo, verdes, verdec]
+    datiFiumeMM=[49, 77, 63, 65, 96, 83, 74, 61, 40, 70, 80, 44]
+    coloriFiumeMM=[giallo, verdec, verdes, verdes, verdec, verdec, verdes, verdes, giallo, verdes, verdec, giallo]
 
-datiFiumeMM=[55, 78, 58, 60, 95, 85, 76, 58, 35, 65, 77, 47]
-coloriFiumeMM=[verdes, verdec, verdes, verdes, verdec, verdec, verdec, verdes, giallo, verdes, verdec, giallo]
+    datiMareMM=[40, 30, 70, 73, 80, 63, 24, 13, 49, 71, 83, 69]
+    coloriMareMM=[giallo, giallo, verdes, verdes, verdec, verdes, rosso, rosso, giallo, verdes, verdec, verdes]
+    
 
-datiMareMM=[48, 38, 68, 76, 85, 68, 35, 18, 60, 70, 80, 65]
-coloriMareMM=[giallo, giallo, verdes, verdec, verdec, verdes, giallo, rosso, verdes, verdes, verdec, verdes]
-//Mock dei dati di tutti gli utenti quando la visualizzazione è x trimestre
-datiCasaTRM=[55, 81, 40, 45, 59]
-coloriCasaTRM=[verdes, verdec, giallo, verdes]
+    datiCasaTRM=[56, 84, 41, 63]
+    coloriCasaTRM=[verdes, verdec, giallo, verdes]
 
-datiFiumeTRM=[64, 80, 56, 63]
-coloriFiumeTRM=[verdes, verdec, verdes, verdes]
+    datiFiumeTRM=[63, 81, 58, 65]
+    coloriFiumeTRM=[verdes, verdec, verdes, verdes]
 
-datiMareTRM=[51, 76, 38, 72]
-coloriMareTRM=[verdes, verdec, giallo, verdes]
+    datiMareTRM=[47, 72, 29, 74]
+    coloriMareTRM=[giallo, verdes, giallo, verdes]
+}else{
+    datiCasaGG=[15, 35, 51, 24, 65, 90, 18]
+    coloriCasaGG=[rosso, giallo, verdes, rosso, verdes, verdec, rosso]
+    
+    datiFiumeGG=[31, 55, 66, 77, 88, 99, 24]
+    coloriFiumeGG=[giallo, verdes, verdes, verdec, verdec, verdec, rosso]
+    
+    datiMareGG=[76, 70, 80, 49, 35, 21, 18]
+    coloriMareGG=[verdec, verdes, verdec, giallo, giallo, rosso, rosso]
+    //Mock dei dati di tutti gli utenti quando la visualizzazione è xmese
+    datiCasaMM=[45, 65, 55, 76, 88, 80, 49, 47, 24, 45, 52, 80]
+    coloriCasaMM=[giallo, verdes, verdes, verdec, verdec, verdec, giallo, giallo, rosso, giallo, verdes, verdec]
+    
+    datiFiumeMM=[55, 78, 58, 60, 95, 85, 76, 58, 35, 65, 77, 47]
+    coloriFiumeMM=[verdes, verdec, verdes, verdes, verdec, verdec, verdec, verdes, giallo, verdes, verdec, giallo]
+    
+    datiMareMM=[48, 38, 68, 76, 85, 68, 35, 18, 60, 70, 80, 65]
+    coloriMareMM=[giallo, giallo, verdes, verdec, verdec, verdes, giallo, rosso, verdes, verdes, verdec, verdes]
+    //Mock dei dati di tutti gli utenti quando la visualizzazione è x trimestre
+    datiCasaTRM=[55, 81, 40, 45, 59]
+    coloriCasaTRM=[verdes, verdec, giallo, verdes]
+    
+    datiFiumeTRM=[64, 80, 56, 63]
+    coloriFiumeTRM=[verdes, verdec, verdes, verdes]
+    
+    datiMareTRM=[51, 76, 38, 72]
+    coloriMareTRM=[verdes, verdec, giallo, verdes]
+    
+}
 
-//Mock dati personali utente siFlag vis giornaliera
-datiPersCasaGGFLAG=[10, 40, 42, 35, 74, 88, 24]
-coloriPersCasaGGFLAG=[rosso, giallo, giallo, giallo, verdes, verdec, rosso]
 
-datiPersFiumeGGFLAG=[24, 49, 75, 80, 90, 91, 26]
-coloriPersFiumeGGFLAG=[rosso, giallo, verdec, verdec, verdec, verdec, giallo]
 
-datiPersMareGGFLAG=[73, 65, 74, 51, 28, 18, 20]
-coloriPersMareGGFLAG=[verdes, verdes, verdes, verdes, giallo, rosso, rosso]
 //Mock dati personali utente noFlag vis giornaliera
-datiPersCasaGG=[undefined, 40, 42, 35, 74, 88, 24]
-coloriPersCasaGG=[rosso, giallo, giallo, giallo, verdes, verdec, rosso]
 
-datiPersFiumeGG=[undefined, 49, 75, 80, 90, 91, 26]
-coloriPersFiumeGG=[rosso, giallo, verdec, verdec, verdec, verdec, giallo]
 
-datiPersMareGG=[undefined, 65, 74, 51, 28, 18, 20]
-coloriPersMareGG=[rosso, verdes, verdes, verdes, giallo, rosso, rosso]
 //Mock dei dati personali utente quando la visualizzazione è xmese
 
-datiPersCasaMM=[51, 68, 49, 80, 90, 82, 46, 52, 26, 49, 53, 87]
-coloriPersCasaMM=[verdes, verdes, giallo, verdec, verdec, verdec, giallo, verdes, giallo, giallo, verdes, verdec]
 
-datiPersFiumeMM=[49, 77, 63, 65, 96, 83, 74, 61, 40, 70, 80, 44]
-coloriPersFiumeMM=[giallo, verdec, verdes, verdes, verdec, verdec, verdes, verdes, giallo, verdes, verdec, giallo]
-
-datiPersMareMM=[40, 30, 70, 73, 80, 63, 24, 13, 49, 71, 83, 69]
-coloriPersMareMM=[giallo, giallo, verdes, verdes, verdec, verdes, rosso, rosso, giallo, verdes, verdec, verdes]
-//Mock dei dati personali utente quando la visualizzazione è x trimestre
-
-datiPersCasaTRM=[56, 84, 41, 63]
-coloriPersCasaTRM=[verdes, verdec, giallo, verdes]
-
-datiPersFiumeTRM=[63, 81, 58, 65]
-coloriPersFiumeTRM=[verdes, verdec, verdes, verdes]
-
-datiPersMareTRM=[47, 72, 29, 74]
-coloriPersMareTRM=[giallo, verdes, giallo, verdes]
 
 //istanzio array label 7 giorni precedenti
 oggi= new Date()
@@ -106,6 +127,12 @@ for(i=0;i<4;i++){
     trimestri[i]=`${mesi[i * 3].substring(0, 3)}/${mesi[(i * 3) + 1].substring(0, 3)}/${mesi[(i * 3) + 2].substring(0, 3)}`
 }
 
+
+document.getElementById("giorni").style.backgroundColor="#053966"
+document.getElementById("giorni").style.border="inset;"
+document.getElementById("casa").style.backgroundColor="#053966"
+document.getElementById("casa").style.border="inset;" 
+
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
@@ -113,25 +140,9 @@ const myChart = new Chart(ctx, {
         labels: days,
         datasets: [{
             label: 'Qualità media delle rilevazioni',
-            data: [12, 13, 34, 42, 11, 21, 11],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+            data: datiCasaGG,
+            backgroundColor: coloriCasaGG,
+            borderColor: coloriCasaGG,
             borderWidth: 1
         }]
     },
@@ -154,13 +165,21 @@ FlagFiume=false
 FlagMare=false
 
 function cambiaMesi(){
-    if(FlagMare)
+    if(FlagMare){
         myChart.data.datasets[0].data=datiMareMM;
-    if(FlagFiume)
+        myChart.data.datasets[0].backgroundColor=coloriMareMM;
+        myChart.data.datasets[0].borderColor=coloriMareMM;
+    }
+    if(FlagFiume){
         myChart.data.datasets[0].data=datiFiumeMM;
-    if(FlagCasa)
+        myChart.data.datasets[0].backgroundColor=coloriFiumeMM;
+        myChart.data.datasets[0].borderColor=coloriFiumeMM;
+    }
+    if(FlagCasa){
         myChart.data.datasets[0].data=datiCasaMM;
-    
+        myChart.data.datasets[0].backgroundColor=coloriCasaMM;
+        myChart.data.datasets[0].borderColor=coloriCasaMM;
+    }
     myChart.data.labels=mesi
     myChart.update();
     FlagGiorni=false
@@ -176,12 +195,21 @@ function cambiaMesi(){
     document.getElementById("trimestri").style.border="" 
 }
 function cambiaGiorni(){
-    if(FlagMare)
+    if(FlagMare){
         myChart.data.datasets[0].data=datiMareGG;
-    if(FlagFiume)
+        myChart.data.datasets[0].backgroundColor=coloriMareGG;
+        myChart.data.datasets[0].borderColor=coloriMareGG;
+    }
+    if(FlagFiume){
         myChart.data.datasets[0].data=datiFiumeGG;
-    if(FlagCasa)
+        myChart.data.datasets[0].backgroundColor=coloriFiumeGG;
+        myChart.data.datasets[0].borderColor=coloriFiumeGG;
+    }
+    if(FlagCasa){
         myChart.data.datasets[0].data=datiCasaGG;
+        myChart.data.datasets[0].backgroundColor=coloriCasaGG;
+        myChart.data.datasets[0].borderColor=coloriCasaGG;
+    }
 
     myChart.data.labels=days
     myChart.update();
@@ -198,13 +226,21 @@ function cambiaGiorni(){
     document.getElementById("trimestri").style.border="" 
 }
 function cambiaTrimestri(){
-    if(FlagMare)
+    if(FlagMare){
         myChart.data.datasets[0].data=datiMareTRM;
-    if(FlagFiume)
+        myChart.data.datasets[0].backgroundColor=coloriMareTRM;
+        myChart.data.datasets[0].borderColor=coloriMareTRM;
+    }
+    if(FlagFiume){
         myChart.data.datasets[0].data=datiFiumeTRM;
-    if(FlagCasa)
+        myChart.data.datasets[0].backgroundColor=coloriFiumeTRM;
+        myChart.data.datasets[0].borderColor=coloriFiumeTRM;
+    }
+    if(FlagCasa){
         myChart.data.datasets[0].data=datiCasaTRM;
-
+        myChart.data.datasets[0].backgroundColor=coloriCasaTRM;
+        myChart.data.datasets[0].borderColor=coloriCasaTRM;
+    }
     myChart.data.labels=trimestri
     myChart.update();
     FlagGiorni=false
@@ -224,12 +260,18 @@ function cambiaTrimestri(){
 function cambiaCasa(){
     if(FlagGiorni){
         myChart.data.datasets[0].data=datiCasaGG;
+        myChart.data.datasets[0].backgroundColor=coloriCasaGG;
+        myChart.data.datasets[0].borderColor=coloriCasaGG;
     }
     if(FlagMesi){
         myChart.data.datasets[0].data=datiCasaMM;
+        myChart.data.datasets[0].backgroundColor=coloriCasaMM;
+        myChart.data.datasets[0].borderColor=coloriCasaMM;
     }
     if(FlagTrimestri){
         myChart.data.datasets[0].data=datiCasaTRM;
+        myChart.data.datasets[0].backgroundColor=coloriCasaTRM;
+        myChart.data.datasets[0].borderColor=coloriCasaTRM;
     }
     FlagCasa=true
     FlagFiume=false
@@ -247,12 +289,18 @@ function cambiaCasa(){
 function cambiaFiume(){
     if(FlagGiorni){
         myChart.data.datasets[0].data=datiFiumeGG;
+        myChart.data.datasets[0].backgroundColor=coloriFiumeGG;
+        myChart.data.datasets[0].borderColor=coloriFiumeGG;
     }
     if(FlagMesi){
         myChart.data.datasets[0].data=datiFiumeMM;
+        myChart.data.datasets[0].backgroundColor=coloriFiumeMM;
+        myChart.data.datasets[0].borderColor=coloriFiumeMM;
     }
     if(FlagTrimestri){
         myChart.data.datasets[0].data=datiFiumeTRM;
+        myChart.data.datasets[0].backgroundColor=coloriFiumeTRM;
+        myChart.data.datasets[0].borderColor=coloriFiumeTRM;
     }
     FlagCasa=false
     FlagFiume=true
@@ -270,12 +318,18 @@ function cambiaFiume(){
 function cambiaMare(){
     if(FlagGiorni){
         myChart.data.datasets[0].data=datiMareGG;
+        myChart.data.datasets[0].backgroundColor=coloriMareGG;
+        myChart.data.datasets[0].borderColor=coloriMareGG;
     }
     if(FlagMesi){
         myChart.data.datasets[0].data=datiMareMM;
+        myChart.data.datasets[0].backgroundColor=coloriMareMM;
+        myChart.data.datasets[0].borderColor=coloriMareMM;
     }
     if(FlagTrimestri){
         myChart.data.datasets[0].data=datiMareTRM;
+        myChart.data.datasets[0].backgroundColor=coloriMareTRM;
+        myChart.data.datasets[0].borderColor=coloriMareTRM;
     }
     FlagCasa=false
     FlagFiume=false

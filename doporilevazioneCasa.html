@@ -7,6 +7,9 @@
     <title>Clean Water - Rilevazione Casa</title>
     <link rel="icon" href="./images/logo_cw.png">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.6/dist/sweetalert2.all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
    
     </style>
@@ -17,7 +20,7 @@
         <div class="informationText">
             
             <p id="heading">Rilevazione <br> effettuata</p>
-                <img src="./images/stats.png">
+                <img src="./images/stats.png" id="bottStatistiche">
         </div>
         <div class="gauge">
             <div class="infoGauge">
@@ -84,9 +87,9 @@
             </div>
         </div>
         <div class="navbar">
-            <img src="./images/advice.png" >
-            <img src="./images/home.png" >
-            <img src="./images/share.png" >
+            <img src="./images/advice.png" id="advice">
+            <a href="./home.html"><img src="./images/home.png" ></a>
+            <img src="./images/share.png" id="share">
         </div>
 
         
@@ -97,6 +100,6 @@
   
 
     
-    
+    <script src="./script/doporilevazioneScript.js"></script>
 </body>
 </html>
