@@ -34,7 +34,7 @@ if(richiestaUtente){
     
     if(REGfiume){
         datiFiumeGG=[60, 49, 75, 80, 90, 91, 26]
-        coloriFiumeG=[verdes, giallo, verdec, verdec, verdec, verdec, giallo]
+        coloriFiumeGG=[verdes, giallo, verdec, verdec, verdec, verdec, giallo]
     }else{
         datiFiumeGG=[undefined, 49, 75, 80, 90, 91, 26]
         coloriFiumeGG=[rosso, giallo, verdec, verdec, verdec, verdec, giallo]

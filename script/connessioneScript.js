@@ -15,6 +15,7 @@ function connetti(){
         document.getElementById("overlay").style.display = "none";
 
         Swal.fire({
+            width: 466,
             title: 'Connessione riuscita!',
             text: 'Benvenuto in CleanWater',
             icon: 'success',
