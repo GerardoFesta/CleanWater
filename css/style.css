@@ -1146,7 +1146,7 @@ position: fixed;
   margin: 0px;
   padding: 0px;
   width: 100%;
-  height: 30%;
+  height: 35%;
   margin-top: -170px;
   overflow: hidden;
 }
@@ -1166,20 +1166,38 @@ position: fixed;
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 #box1 {
-  background-color: green;
+  border: none;
+  background-image:url('consigliCasa1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
   left: 33%;
 }
 #box2 {
-  background-color: yellow;
+  border: none;
+  background-image:url('consigliCasa2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height:50%;
+  background-size: 400px 300px;
+
 }
 #box3 {
   background-color: red;
+  border: none;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
+  
 }
 .secondoBox {
   position: absolute;
   width: 84%;
   height: 90%;
-  line-height: 40%;
+  line-height: 250%;
   font-size: 50px;
   text-align: center;
   border: 2px solid black;
@@ -1187,19 +1205,40 @@ position: fixed;
   top: 100px;
   margin-left: -25%;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
-.secondoBox #box1{
+#secondoBox1{
   background-color: green;
   text-align: center;
+  border: none;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
   left: 33%;
+ 
 }
-.secondoBox #box2{
+#secondoBox2{
   background-color: yellow;
+  border: none;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
+  
 }
-.secondoBox #box3{
+ #secondoBox3{
   background-color: red;
+  border: none;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
+
 }
 
 .terzoBox{
@@ -1214,18 +1253,39 @@ position: fixed;
   top: 100px;
   margin-left: -25%;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
-.terzoBox #box1{
+#terzoBox1{
   background-color: green;
+  border: none;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
   left: 33%;
+  
 }
-.terzoBox #box2{
+#terzoBox2{
   background-color: yellow;
+  border: none;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
+ 
 }
-.terzoBox #box3{
+ #terzoBox3{
   background-color: red;
+  border: none;
+  background-image:url();
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: 420px 200px;
+ 
 }
 .move {
   position:fixed;
