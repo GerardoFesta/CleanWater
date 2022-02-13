@@ -1167,30 +1167,31 @@ position: fixed;
 }
 #box1 {
   border: none;
-  background-image:url('consigliCasa1.png');
+  background-image:url('detersivi.jpg');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
-  background-size: 420px 200px;
+  background-size:cover;
   left: 33%;
 }
 #box2 {
   border: none;
-  background-image:url('consigliCasa2.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  height:50%;
-  background-size: 400px 300px;
-
-}
-#box3 {
-  background-color: red;
-  border: none;
-  background-image:url();
+  background-image:url('lavandino.png');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
-  background-size: 420px 200px;
+  background-size: cover;
+
+}
+
+
+#box3 {
+  background-image:url('plastica.png');
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:60%;
+  background-size: cover;
   
 }
 .secondoBox {
@@ -1209,10 +1210,9 @@ position: fixed;
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 #secondoBox1{
-  background-color: green;
   text-align: center;
   border: none;
-  background-image:url();
+  background-image:url('retino.png');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
@@ -1221,9 +1221,8 @@ position: fixed;
  
 }
 #secondoBox2{
-  background-color: yellow;
   border: none;
-  background-image:url();
+  background-image:url('spiaggia.png');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
@@ -1231,13 +1230,12 @@ position: fixed;
   
 }
  #secondoBox3{
-  background-color: red;
   border: none;
-  background-image:url();
+  background-image:url('tossico.png');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
-  background-size: 420px 200px;
+  background-size: cover;
 
 }
 
@@ -1257,30 +1255,27 @@ position: fixed;
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 #terzoBox1{
-  background-color: green;
   border: none;
-  background-image:url();
+  background-image:url('scarico.png');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
-  background-size: 420px 200px;
+  background-size:cover;
   left: 33%;
   
 }
 #terzoBox2{
-  background-color: yellow;
   border: none;
-  background-image:url();
+  background-image:url('corso\ d\'acqua.png');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
-  background-size: 420px 200px;
+  background-size: cover;
  
 }
  #terzoBox3{
-  background-color: red;
   border: none;
-  background-image:url();
+  background-image:url('finale.png');
   background-repeat: no-repeat;
   background-position: center;
   height:60%;
