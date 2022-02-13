@@ -104,8 +104,17 @@ $(document).on('click', '.SwalBtn2', function() {
     window.location.href="./statistiche.html";
 });
 
-$("ritorno").click(function(){
-    
+
+
+$("#ritorno").click(function(){
+    $("#casahome").animate({height: "90px"});
+    $("#fiumehome").animate({height: "90px"});
+    $("#marehome").animate({height: "90px"});
+    $("#fiumehome").show();
+    $("#marehome").show();
+    $("#casahome").show();
+    $("#ritorno").hide();
+    $("#bottonehome").hide();
 })
 
 function allcasa(){
