@@ -12,7 +12,7 @@ richiestaCondivise=localStorage.getItem("statsCondivise")
 
 
 if(richiestaUtente==="false"){
-    document.getElementById("heading").innerHTML="Statistiche Condivise"
+    document.getElementById("heading").innerHTML="<br>Statistiche Condivise"
 }
 
 
@@ -23,7 +23,7 @@ verdec="rgba(99, 232, 4, 0.8)"
 
 //Mock dei dati di tutti gli utenti quando la visualizzazione è giornoxgiorno
 
-if(richiestaUtente){
+if(richiestaUtente==="true"){
     if(REGcasa){
         datiCasaGG=[100, 40, 42, 35, 74, 88, 24]
         coloriCasaGG=[verdec, giallo, giallo, giallo, verdes, verdec, rosso]
