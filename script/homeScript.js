@@ -6,11 +6,13 @@ if(localStorage.getItem("casa")==null&&localStorage.getItem("fiume")==null&&loca
     $("#advice").hide();
     $("#share").hide();
     $("#shareLink").hide();
+    $("#consigliLink").hide();
 }else{
     $("#bottStatistiche").show();
     $("#advice").show();
     $("#share").show();
     $("#shareLink").show();
+    $("#consigliLink").show();
 }
 var script = document.createElement("script");
 script.src = "https://code.jquery.com/jquery-3.4.1.min.js";
@@ -115,6 +117,10 @@ $("#ritorno").click(function(){
     $("#casahome").show();
     $("#ritorno").hide();
     $("#bottonehome").hide();
+    $("#casahome").attr('disabled', false);
+    $("#fiumehome").attr('disabled', false);
+    $("#marehome").attr('disabled', false);
+    $("#rilevazioneHome").text("Dove vuoi rilevare i dati?")
 })
 
 function allcasa(){
