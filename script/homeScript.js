@@ -25,18 +25,50 @@ $("#marehome").on("click",allmare);
 $("#fiumehome").on("click",allfiume);
 
 $("#bottonehome").click(function(){
-    if($("#casahome").is(":visible")){
-        localStorage.setItem("casa",true);
-        window.location.href="./doporilevazioneCasa.html";
-    }
-    if($("#marehome").is(":visible")){
-        localStorage.setItem("mare",true);
-        window.location.href="./doporilevazioneMare.html";
-    }
-    if($("#fiumehome").is(":visible")){
-        localStorage.setItem("fiume",true);
-        window.location.href="./doporilevazioneFiume.html";
-    }
+    Swal.fire({
+        width: 466,
+        title: 'Rilevazione in corso...',
+        html: '<br><br><br><br><br><br><br><br>'+ 
+        '<div class="overlay" id="overlay">'+
+            '<div id="loader"></div>'+
+        '</div>',
+        showConfirmButton: false,
+        allowOutsideClick: false
+    })
+   
+    $(".overlay").show();
+    $(".loader").show();
+    document.getElementById("bottonehome").style.display = "none";
+    window.setTimeout(function redirect(){
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+
+        Swal.fire({
+            width: 466,
+            title: 'Rilevazione Completata',
+            text: '',
+            icon: 'success',
+            confirmButtonText: 'Visualizza la tua rilevazione',
+            allowOutsideClick: false
+        }).then((result) => {
+            if (result.isConfirmed) {
+                if($("#casahome").is(":visible")){
+                    localStorage.setItem("casa",true);
+                    window.location.href="./doporilevazioneCasa.html";
+                }
+                if($("#marehome").is(":visible")){
+                    localStorage.setItem("mare",true);
+                    window.location.href="./doporilevazioneMare.html";
+                }
+                if($("#fiumehome").is(":visible")){
+                    localStorage.setItem("fiume",true);
+                    window.location.href="./doporilevazioneFiume.html";
+                }
+            }
+        })
+    }, 3000)
+
+    
 })
 
 
@@ -72,6 +104,9 @@ $(document).on('click', '.SwalBtn2', function() {
     window.location.href="./statistiche.html";
 });
 
+$("ritorno").click(function(){
+    
+})
 
 function allcasa(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di casa?")
@@ -80,6 +115,7 @@ function allcasa(){
     $("#casahome").animate({height: "220px"});
     $("#casahome").attr('disabled', true);
     $("#bottonehome").show();
+    $("#ritorno").show();
 }
 /*
 function restrcasa(){
@@ -97,6 +133,7 @@ function allfiume(){
     $("#fiumehome").animate({height: "220px"});
     $("#fiumehome").attr('disabled', true);
     $("#bottonehome").show();
+    $("#ritorno").show();
 }
 
 /*
@@ -115,6 +152,7 @@ function allmare(){
     $("#marehome").animate({height: "220px"});
     $("#marehome").attr('disabled', true);
     $("#bottonehome").show();
+    $("#ritorno").show();
 }
 /*
 function restrmare(){

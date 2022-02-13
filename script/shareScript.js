@@ -1,7 +1,6 @@
 $(document).on('click', '#fb', function() {
     Swal.fire({
         width: 466,
-        margin:5,
         title: 'Condivisione andata a buon fine!',
         text:"Grazie per il tuo supporto",
         showConfirmButton: true,
@@ -12,7 +11,6 @@ $(document).on('click', '#fb', function() {
 $(document).on('click', '#tele', function() {
     Swal.fire({
         width: 466,
-        margin:5,
         title: 'Condivisione andata a buon fine!',
         text:"Grazie per il tuo supporto",
         showConfirmButton: true,
@@ -23,7 +21,6 @@ $(document).on('click', '#tele', function() {
 $(document).on('click', '#twt', function() {
     Swal.fire({
         width: 466,
-        margin:5,
         title: 'Condivisione andata a buon fine!',
         text:"Grazie per il tuo supporto",
         showConfirmButton: true,
@@ -34,7 +31,6 @@ $(document).on('click', '#twt', function() {
 $(document).on('click', '#env', function() {
     Swal.fire({
         width: 466,
-        margin:5,
         title: 'Condivisione andata a buon fine!',
         text:"Grazie per il tuo supporto",
         showConfirmButton: true,
