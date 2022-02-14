@@ -1369,4 +1369,13 @@ position: fixed;
     
     .right3 img{
       width: 80px;}
+
+#tipoConsigli{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  margin-bottom: -60px;
+  margin-top: -20px;
+  text-align: center;
+  font-weight: bold;
+}
     
