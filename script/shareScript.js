@@ -47,10 +47,10 @@ $("#share").click(function(){
         grow: 'row',
         title: 'Condividi la tua ultima rilevazione',
         html:""+
-        '<a href="#" class="fa fa-facebook" id="fb"></a>'+
-        '<a href="#" class="fa fa-twitter" id="twt"></a>'+
-        '<a href="#" class="fa fa-envelope" id="env"></a>'+
-        '<a href="#" class="fa fa-telegram" id="tele"></a>'+"<br><br>",
+        '<span title="Facebook"><a href="#" class="fa fa-facebook" id="fb" alt="Facebook"></a></span>'+
+        '<span title="Twitter"><a href="#" class="fa fa-twitter" id="twt" alt="Twitter"></a></span>'+
+        '<span title="Email"><a href="#" class="fa fa-envelope" id="env" alt="Email"></a></span>'+
+        '<span title="Telegram"><a href="#" class="fa fa-telegram" id="tele" alt="Telegram"></a></span>'+"<br><br>",
         showCancelButton: false,
         showConfirmButton: false,
     })
