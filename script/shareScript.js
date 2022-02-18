@@ -45,7 +45,7 @@ $("#share").click(function(){
         width: 466,
         position: 'center',
         grow: 'row',
-        title: 'Condividi le tue rilevazioni',
+        title: 'Condividi la tua ultima rilevazione',
         html:""+
         '<a href="#" class="fa fa-facebook" id="fb"></a>'+
         '<a href="#" class="fa fa-twitter" id="twt"></a>'+
