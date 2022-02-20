@@ -127,7 +127,7 @@ function allcasa(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di casa?")
     $("#fiumehome").hide();
     $("#marehome").hide();
-    $("#casahome").animate({height: "220px"});
+    $("#casahome").animate({height: "200px"});
     $("#casahome").attr('disabled', true);
     $("#bottonehome").show();
     $("#ritorno").show();
@@ -145,7 +145,7 @@ function allfiume(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di un fiume?")
     $("#casahome").hide();
     $("#marehome").hide();
-    $("#fiumehome").animate({height: "220px"});
+    $("#fiumehome").animate({height: "200px"});
     $("#fiumehome").attr('disabled', true);
     $("#bottonehome").show();
     $("#ritorno").show();
@@ -164,7 +164,7 @@ function allmare(){
     $("#rilevazioneHome").text("Vuoi rilevare la qualità dell'acqua di mare?")
     $("#casahome").hide();
     $("#fiumehome").hide();
-    $("#marehome").animate({height: "220px"});
+    $("#marehome").animate({height: "200px"});
     $("#marehome").attr('disabled', true);
     $("#bottonehome").show();
     $("#ritorno").show();

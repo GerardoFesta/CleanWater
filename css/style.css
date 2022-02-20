@@ -136,7 +136,7 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-around;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -971,12 +971,12 @@ position: fixed;
 }
 .formWrapper #positionTextReg{
   position: relative;
-  right: 70px;
-  bottom: 10px
+  right: 120px;
+  bottom: 20px
 }
 .formWrapper #positionTextRegcheck{
   position: relative;
-  right: 275px;
+  right: 315px;
   top: 40px;
 }
  /* Center the loader */
